@@ -90,7 +90,7 @@ section#recherche form button{
     color: white;
 }
 
-section#recherche form button p{
+section#recherche form button span{
     margin: 0;
 }
 section#recherche form button i{

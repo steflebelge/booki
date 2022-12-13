@@ -41,7 +41,7 @@
         width: inherit;
     }
 
-    section#recherche form button p{
+    section#recherche form button span{
         display: none;
     }
 
