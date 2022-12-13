@@ -61,20 +61,21 @@ section#recherche h1{
 
 section#recherche form{
     height: 45px;
+    margin-bottom: 25px;
 }
 
 section#recherche form > *{
     padding: 15px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #D9D9D9;
     vertical-align: top;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 section#recherche form i{
     border-right: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: #F2F2F2;
+    background-color: #D9D9D9;
 }
 
 section#recherche form input{
@@ -95,4 +96,41 @@ section#recherche form button span{
 }
 section#recherche form button i{
     display: none;
+}
+
+section#recherche div#filtres > *{
+    margin-right: 25px;
+}
+
+section#recherche div#filtres p,
+section#recherche div#filtres span{
+    font-weight: bolder;
+}
+
+section#recherche div#filtres{
+    display: flex;
+    height: 50px;
+}
+
+section#recherche div#filtres button{
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    background-color: white;
+    padding: 0 10px;
+}
+
+section#recherche div#filtres button:hover {
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
+
+section#recherche div#filtres i{
+    color: #0065FC;
+    margin: 0 7px;
+    font-size: 1.4em;
+    vertical-align: middle;
+}
+
+section#recherche div#filtres span {
+    padding-right: 10px;
 }

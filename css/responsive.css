@@ -1,53 +1,77 @@
 @media screen and (max-width: 400px) {
-    body{
+    body {
         margin: 0;
     }
 
-    header{
+    header {
         flex-direction: column;
         align-items: center;
         height: auto;
     }
 
-    header img{
+    header img {
         margin: 30px;
     }
 
-    nav{
+    nav {
         width: 100%;
     }
 
-    nav a{
+    nav a {
         border-bottom: 3px solid #FFF0;
         border-top: none;
         width: inherit;
         padding: 25px 0;
     }
 
-    nav a:hover{
+    nav a:hover {
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
 
-    main{
+    main {
         padding: 0 20px;
     }
 
-    section#recherche form{
+    section#recherche form {
         width: 100%;
         display: flex;
     }
-    section#recherche form input{
+
+    section#recherche form input {
         width: inherit;
     }
 
-    section#recherche form button span{
+    section#recherche form button span {
         display: none;
     }
 
-    section#recherche form button i{
+    section#recherche form button i {
         display: block;
         background-color: #0065FC;
+        margin-right: 0;
     }
 
+    section#recherche div#filtres {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    section#recherche div#filtres p {
+        width: 100%;
+    }
+    section#recherche div#filtres span {
+        padding: 0;
+    }
+    section#recherche div#filtres button {
+        min-height: 50px;
+        margin-bottom: 25px;
+        width: 40%;
+        text-align: left;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
