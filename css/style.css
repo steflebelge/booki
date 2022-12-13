@@ -9,7 +9,7 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
+    text-align: left;
 }
 
 body{
@@ -32,6 +32,7 @@ header img{
 
 nav{
     display: flex;
+    text-align: center;
 }
 
 nav a{
@@ -45,4 +46,53 @@ nav a{
 nav a:hover{
     color: #0065FC;
     border-top: 3px solid #0065FC;
+}
+
+section#recherche{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section#recherche h1{
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+section#recherche form{
+    height: 45px;
+}
+
+section#recherche form > *{
+    padding: 15px;
+    border: 1px solid #F2F2F2;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+section#recherche form i{
+    border-right: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+section#recherche form input{
+    border-left: none;
+    border-right: none;
+}
+
+section#recherche form button{
+    border-color: #0065FC;
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+section#recherche form button p{
+    margin: 0;
+}
+section#recherche form button i{
+    display: none;
 }

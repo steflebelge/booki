@@ -2,24 +2,52 @@
     body{
         margin: 0;
     }
+
     header{
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
+
     header img{
         margin: 30px;
     }
+
     nav{
         width: 100%;
     }
+
     nav a{
         border-bottom: 3px solid #FFF0;
         border-top: none;
         width: inherit;
         padding: 25px 0;
     }
+
     nav a:hover{
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
+
+    main{
+        padding: 0 20px;
+    }
+
+    section#recherche form{
+        width: 100%;
+        display: flex;
+    }
+    section#recherche form input{
+        width: inherit;
+    }
+
+    section#recherche form button p{
+        display: none;
+    }
+
+    section#recherche form button i{
+        display: block;
+        background-color: #0065FC;
+    }
+
 }
