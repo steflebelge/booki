@@ -1,15 +1,14 @@
-@font-face {
-    font-family: Raleway-Regular;
-    src: url("Raleway-Regular.ttf");
-}
 
+/* de 992 a 1400px */
 html {
-    font-family: 'Raleway-Regular', serif;
+    font-family: 'Raleway', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: left;
+    max-width: 1400px;
+    margin: auto;
 }
 
 body{
@@ -43,7 +42,8 @@ nav a{
     border-bottom: 3px solid #FFF0;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.selected{
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
@@ -133,4 +133,134 @@ section#recherche div#filtres i{
 
 section#recherche div#filtres span {
     padding-right: 10px;
+}
+
+section#recherche div#infos{
+    display: flex;
+    margin-top: 18px;
+}
+
+section#recherche div#infos i{
+    border: 2px solid #D9D9D9;
+    border-radius: 50%;
+    min-width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+section#recherche div#infos i::before {
+    vertical-align: text-bottom;
+    font-size: 0.66em;
+    color: #0065FC;
+}
+
+section#recherche div#infos p {
+    height: fit-content;
+    margin: auto;
+    padding-left: 11px;
+}
+
+section#hebergements{
+    margin-top: 39px;
+    display: flex;
+}
+
+section#hebergements h2{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+section#hebergements > div{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+}
+
+section#hebergements div#tous{
+    padding: 42px 40px 46px;
+    margin-right: 40px;
+}
+
+section#hebergements div#tous h2{
+    margin: 0 0 23px;
+}
+
+section#hebergements div#tous p{
+    margin: 10px 0 0;
+}
+
+
+
+section#hebergements div#populaires{
+    padding: 41px 42px 34px 37px;
+}
+
+section#hebergements div#populaires h2{
+    margin: 0 0 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#hebergements div#populaires h2 i{
+    width: 18px;
+    height : 15.75px;
+    color: #0065FC;
+
+}
+
+section#hebergements div.results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#hebergements a.card{
+    width: 30%;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    max-width: 246px;
+    min-width: 246px;
+    margin-bottom: 30px;
+}
+
+section#hebergements div#populaires div.results{
+    flex-direction: column;
+
+}
+
+section#hebergements div#populaires a.card{
+    width: auto;
+}
+
+section#hebergements figure{
+    margin: 0;
+}
+
+section#hebergements figure img{
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section#hebergements p.tarifs{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+section#hebergements span.note{
+    color: #0065FC;
+}
+
+section#hebergements span.note i {
+    width: 12px;
+    height: 12px;
 }

@@ -7,15 +7,22 @@
     <title>Booki</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!--  F.A  -->
     <script src="https://kit.fontawesome.com/180e18a7b2.js" crossorigin="anonymous"></script>
+
+    <!-- gogole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <img src="images/logo/Booki.png" alt="Logo Booki" title="Logo Booki">
     <nav>
-        <a href="#">Hébergements</a>
-        <a href="#">Activités</a>
+        <a href="#hebergements" class="selected">Hébergements</a>
+        <a href="#activites">Activités</a>
     </nav>
 </header>
 
@@ -24,7 +31,9 @@
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         <form>
-            <i class="fa-solid fa-location-dot"></i><input type="text" value="Marseille, France"><button><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" value="Marseille, France">
+            <button><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <div id="filtres">
             <p>Filtres</p>
@@ -45,15 +54,160 @@
                 <span>Animaux autorisés</span>
             </button>
         </div>
+        <div id="infos">
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville.</p>
+        </div>
     </section>
-<!--    <section></section>-->
-<!--    <section></section>-->
+    <section id="hebergements">
+        <div id="tous">
+            <h2>Hébergements a Marseille</h2>
+            <div class="results">
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <figcaption>Auberge La Canebière</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit a partir de 95€ la nuit.</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                        <figcaption>Hotel du port</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 52€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                        <figcaption>Hotel Les mouettes</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 76€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                        <figcaption>Hotel de la mer</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 46€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                        <figcaption>Auberge Le Panier</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 23€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                        <figcaption>Hotel Chez Amina</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 96€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+            </div>
+            <p>Afficher plus</p>
+        </div>
+        <div id="populaires">
+            <h2>Les plus populaires <i class="fa-solid fa-chart-line"></i></h2>
+            <div class="results">
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                        <figcaption>Hotel Le soleil du matin</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 128€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                        <figcaption>Chambres d'hôtes au coeur de l'eau</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 71€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+                <a href="#" class="card">
+                    <figure>
+                        <img src="/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                        <figcaption>Hotel Bleu et Blanc</figcaption>
+                    </figure>
+                    <p class="tarifs">Nuit à partir de 68€ la nuit</p>
+                    <span class="note">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--    <section></section>-->
 </main>
 <footer></footer>
 </body>
 </html>
 
-<!--pas la bonne police/variante ?-->
-<!-- couleurs textes barre de nav ?-->
-<!-- breakpoints du projets ? 1400, 992, ??-->
-<!--Version mobile, hebergemeent toujours :hover ?-->
+
+<!-- reduction font size animaux ?-->
+<!-- Pb font weight ! -->
+<!-- taille des i ?-->
+<!-- espaces form recherche -->
+<!-- responsive div.results pas prit en compte ? !important-->
+<!-- div#filtres 768 px ?-->

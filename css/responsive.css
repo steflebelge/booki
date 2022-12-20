@@ -1,4 +1,52 @@
-@media screen and (max-width: 400px) {
+/* de 768 a 992 px*/
+@media screen and (max-width: 992px) {
+
+    body {
+        margin: 0 35px;
+    }
+
+    section#recherche div#filtres i {
+        margin: 0 3px;
+    }
+
+    section#recherche div#filtres span {
+        padding-right: 2px;
+    }
+
+    section#recherche div#filtres button {
+        padding: 0 7px;
+    }
+
+    section#recherche div#filtres > button:last-child {
+        margin-right: 0;
+    }
+
+    section#hebergements {
+        flex-direction: column;
+    }
+
+    section#hebergements div#tous {
+        margin-bottom: 53px;
+    }
+
+    section#hebergements > div {
+        margin-left: 35px;
+        margin-right: 35px !important;
+    }
+
+    section#hebergements div.results {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    section#hebergements div#populaires a.card {
+        width: 30%;
+    }
+}
+
+/* de 320 a 768 px */
+@media screen and (max-width: 768px) {
+
     body {
         margin: 0;
     }
@@ -24,13 +72,22 @@
         padding: 25px 0;
     }
 
-    nav a:hover {
+    nav a:not(.selected) {
+        border-bottom: 3px solid #D9D9D9;
+    }
+
+    nav a:hover,
+    nav a.selected {
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
 
-    main {
-        padding: 0 20px;
+    section > div#infos{
+        padding: 0 12px;
+    }
+
+    section#recherche {
+        padding: 0 22px;
     }
 
     section#recherche form {
@@ -55,23 +112,52 @@
     section#recherche div#filtres {
         flex-wrap: wrap;
         height: auto;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    section#recherche div#filtres * {
+        margin-right: 0;
+    }
+
+    section#recherche div#filtres i {
+        margin: 0 6px;
     }
 
     section#recherche div#filtres p {
         width: 100%;
     }
+
     section#recherche div#filtres span {
         padding: 0;
+        font-size: 0.78em;
     }
+
     section#recherche div#filtres button {
         min-height: 50px;
         margin-bottom: 25px;
-        width: 40%;
+        width: 47%;
         text-align: left;
         padding: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
+
+
+    section#hebergements {
+        flex-direction: column-reverse;
+    }
+
+    section#hebergements div#tous {
+        margin-top: 26px;
+    }
+
+    section#hebergements div#populaires {
+        margin: 0 !important;
+        border-radius: 0;
+    }
+
+    section#hebergements div#populaires div.results{
+        /*flex-direction: column !important;*/
+    }
+
+
+
 }
