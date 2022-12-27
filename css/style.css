@@ -57,8 +57,7 @@ section#recherche form{
 section#recherche form > *{
     padding: 15px;
     border: 1px solid #D9D9D9;
-    vertical-align: top;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 section#recherche form i{
@@ -70,6 +69,8 @@ section#recherche form i{
 section#recherche form input{
     border-left: none;
     border-right: none;
+    font-size: 18px;
+    max-width: 236px;
 }
 
 section#recherche form button{
@@ -184,6 +185,7 @@ section#hebergements div#tous a:last-child{
     text-decoration: none;
     color: black;
     font-weight: 700;
+    margin-top: 10px;
 }
 
 section#hebergements aside#populaires{
@@ -197,10 +199,9 @@ section#hebergements aside#populaires h2{
 }
 
 section#hebergements aside#populaires h2 i{
-    width: 18px;
-    height : 15.75px;
     color: #0065FC;
-
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 section#hebergements div.results{
@@ -211,14 +212,12 @@ section#hebergements div.results{
 }
 
 section#hebergements a.card{
-    width: 30%;
     border-radius: 20px;
     text-decoration: none;
     color: black;
     background-color: white;
     padding: 5px;
-    max-width: 246px;
-    min-width: 246px;
+    width: 246px;
     margin-bottom: 30px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     box-sizing: border-box;
@@ -261,9 +260,8 @@ section#hebergements span.note{
     margin-left: 10px;
 }
 
-section#hebergements span.note i {
-    width: 12px;
-    height: 12px;
+section#hebergements span.note i.starGrey {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(95%) saturate(189%) hue-rotate(208deg) brightness(116%) contrast(90%);
 }
 
 section#hebergements aside#populaires div.results{
@@ -272,10 +270,8 @@ section#hebergements aside#populaires div.results{
 
 section#hebergements aside#populaires a.card{
     display: flex;
-    max-height: 144px;
-    max-width: 343px;
-    min-width: 343px;
-    min-height: 144px;
+    width: 343px;
+    height: 144px;
 }
 
 section#hebergements aside#populaires figure figcaption{
@@ -294,8 +290,7 @@ section#hebergements aside#populaires figure img{
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
     height: 100%;
-    max-width: 137px;
-    min-width: 137px;
+    width: 137px;
 }
 
 section#hebergements aside#populaires a.card > div {

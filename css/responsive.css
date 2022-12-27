@@ -35,13 +35,17 @@
         margin-right: 35px;
     }
 
+    section#hebergements aside#populaires figure img {
+        width: 106px;
+    }
+
     section#hebergements aside#populaires div.results {
         flex-direction: row;
         justify-content: space-around;
     }
 
     section#hebergements aside#populaires a.card {
-        width: 30%;
+        width: 252px;
     }
 }
 
