@@ -309,3 +309,36 @@ section#hebergements aside#populaires a.card > div span.note{
     bottom: 0;
 }
 
+footer{
+    height: 227px;
+    margin-top: 61px;
+    background: #F2F2F2;
+    display: flex;
+    padding: 45px 70px;
+    box-sizing: border-box;
+}
+
+footer div{
+    width: 30%;
+}
+
+footer div h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+footer div ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer div ul li{
+    margin-bottom: 12px;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: black;
+}

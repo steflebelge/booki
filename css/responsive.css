@@ -168,4 +168,14 @@
         margin: 0;
         border-radius: 0;
     }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 46px 30px;
+    }
+
+    footer div{
+        width: 90%;
+    }
 }
