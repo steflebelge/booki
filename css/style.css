@@ -1,7 +1,7 @@
 
 /* de 992 a 1400px */
 html {
-    font-family: 'Raleway', serif;
+    font-family: 'Raleway';
     text-align: left;
     max-width: 1400px;
     margin: auto;
@@ -79,10 +79,11 @@ section#recherche form button{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: white;
+    padding: 0 15px;
 }
 
 section#recherche form button span{
-    margin: 0;
+    font-size: 18px;
 }
 section#recherche form button i{
     display: none;
