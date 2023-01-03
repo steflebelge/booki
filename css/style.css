@@ -1,15 +1,12 @@
 
 /* de 992 a 1400px */
-html {
-    font-family: 'Raleway';
-    text-align: left;
-    max-width: 1400px;
-    margin: auto;
-}
 
 body{
-    margin: 0 53px 0 48px;
-    padding: 0;
+    max-width: 1400px;
+    margin: auto;
+    font-family: 'Raleway', serif;
+    padding: 0 53px 0 48px;
+    box-sizing: border-box;
 }
 
 header{
@@ -70,7 +67,7 @@ section#recherche form input{
     border-left: none;
     border-right: none;
     font-size: 18px;
-    max-width: 236px;
+    max-width: 25%;
 }
 
 section#recherche form button{
@@ -182,7 +179,7 @@ section#hebergements div#tous h2{
     margin: 0 0 23px;
 }
 
-section#hebergements div#tous a:last-child{
+section#hebergements div#tous a:last-child:not(.card){
     text-decoration: none;
     color: black;
     font-weight: 700;
@@ -190,7 +187,10 @@ section#hebergements div#tous a:last-child{
 }
 
 section#hebergements aside#populaires{
-    padding: 41px 42px 34px 37px;
+    padding: 41px 30px 34px 30px;
+    width: 62%;
+    max-width: 420px;
+    box-sizing: border-box;
 }
 
 section#hebergements aside#populaires h2{
@@ -218,7 +218,7 @@ section#hebergements a.card{
     color: black;
     background-color: white;
     padding: 5px;
-    width: 246px;
+    width: 30%;
     margin-bottom: 30px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     box-sizing: border-box;
@@ -240,10 +240,6 @@ section#hebergements figure figcaption {
     font-weight: 700;
 }
 
-section#hebergements h3{
-    display: none;
-}
-
 section#hebergements p.tarifs{
     font-weight: 400;
     font-size: 14px;
@@ -262,7 +258,7 @@ section#hebergements span.note{
 }
 
 section#hebergements span.note i.starGrey {
-    filter: brightness(0) saturate(100%) invert(99%) sepia(95%) saturate(189%) hue-rotate(208deg) brightness(116%) contrast(90%);
+    color: #F2F2F2;
 }
 
 section#hebergements aside#populaires div.results{
@@ -271,12 +267,8 @@ section#hebergements aside#populaires div.results{
 
 section#hebergements aside#populaires a.card{
     display: flex;
-    width: 343px;
+    width: 100%;
     height: 144px;
-}
-
-section#hebergements aside#populaires figure figcaption{
-    display: none;
 }
 
 section#hebergements aside#populaires h3{
@@ -287,11 +279,16 @@ section#hebergements aside#populaires h3{
     line-height: 19px;
 }
 
+section#hebergements aside#populaires figure{
+    width: 40%;
+    min-width: 40%;
+}
+
 section#hebergements aside#populaires figure img{
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
     height: 100%;
-    width: 137px;
+    width: 100%;
 }
 
 section#hebergements aside#populaires a.card > div {
@@ -309,6 +306,52 @@ section#hebergements aside#populaires a.card > div span.note{
     bottom: 0;
 }
 
+section#activites {
+    margin-top: 60px;
+}
+
+section#activites div{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#activites div article{
+    width: 22%;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+section#activites div article a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    height: 87%;
+    display: block;
+}
+
+section#activites div article img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section#activites div article a h3{
+    height: 56px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 19px;
+    box-sizing: border-box;
+    margin-top: -5px;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
 footer{
     height: 227px;
     margin-top: 61px;
@@ -319,7 +362,7 @@ footer{
 }
 
 footer div{
-    width: 30%;
+    width: 35%;
 }
 
 footer div h2{

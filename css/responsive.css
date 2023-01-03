@@ -2,7 +2,7 @@
 @media screen and (max-width: 992px) {
 
     body {
-        margin: 0 35px;
+        margin: 0;
     }
 
     section#recherche div#filtres i {
@@ -27,16 +27,23 @@
 
     section#hebergements div#tous {
         margin-bottom: 53px;
+        margin-right: 0;
     }
 
-    section#hebergements div#tous,
-    section#hebergements > aside {
-        margin-left: 35px;
-        margin-right: 35px;
+    section#hebergements aside#populaires {
+        width: 100%;
+        max-width: unset;
+        padding: 41px 20px 34px 20px;
     }
 
-    section#hebergements aside#populaires figure img {
-        width: 106px;
+    section#hebergements aside#populaires a.card {
+        width: 31%;
+    }
+
+    section#hebergements aside#populaires a.card > div {
+        margin-left: 7px;
+        position: unset;
+        padding: 0;
     }
 
     section#hebergements aside#populaires div.results {
@@ -44,8 +51,13 @@
         justify-content: space-around;
     }
 
-    section#hebergements aside#populaires a.card {
-        width: 252px;
+    section#activites div article img {
+        height: 75%;
+    }
+
+    footer{
+        padding: 45px;
+        margin-top: 0;
     }
 }
 
@@ -53,7 +65,7 @@
 @media screen and (max-width: 768px) {
 
     body {
-        margin: 0;
+        padding: 0;
     }
 
     header {
@@ -102,6 +114,7 @@
 
     section#recherche form input {
         width: inherit;
+        max-width: unset;
     }
 
     section#recherche form button span {
@@ -169,10 +182,48 @@
         border-radius: 0;
     }
 
+    section#hebergements div.results {
+        gap: 20px;
+    }
+
+    section#hebergements aside#populaires a.card {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    section#hebergements aside#populaires a.card > div span.note {
+        bottom: 5px;
+    }
+
+    section#activites{
+        margin-top: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    section#activites div{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    section#activites div article{
+        min-width: 200px;
+        width: max-content;
+    }
+
+    section#activites div article a {
+        max-width: 300px;
+        max-height: 165px;
+        min-width: 300px;
+    }
+
+
     footer{
         flex-direction: column;
         height: auto;
-        padding: 46px 30px;
+        padding: 45px 30px;
+        margin-top: 61px;
     }
 
     footer div{
