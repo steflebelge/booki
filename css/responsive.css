@@ -1,5 +1,6 @@
 /* de 768 a 992 px*/
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 991px) {
 
     body {
         margin: 0;
@@ -62,7 +63,7 @@
 }
 
 /* de 320 a 768 px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     body {
         padding: 0;
@@ -153,7 +154,7 @@
     section#recherche div#filtres button {
         min-height: 50px;
         margin-bottom: 25px;
-        width: 47%;
+        width: 48%;
         text-align: left;
         padding: 0;
     }
